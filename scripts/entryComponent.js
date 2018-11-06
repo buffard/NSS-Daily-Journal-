@@ -1,15 +1,18 @@
-
 let container = document.querySelector(".entryLog")
 
-const makeJournalEntryComponent = (journalEntry) => {
-  return `
+const makeJournalEntryComponent = (entry) => {
+  let strings = ""
+  console.log(entry)
+  entry.forEach((arrObj) => {
+    strings += `
     <div id="journalEntry">
-      <h1>${entry.concept}</h1>
-      <h2>${entry.date}</h2>
-      <p>${entry.entry}</p>
-      <p>${entry.mood}</p>
+      <h2>${arrObj.date}</h2>
+      <p>${arrObj.entry}</p>
+      <p>${arrObj.mood}</p>
     </div>
   `
+  
+  })
+  console.log("string return", strings)
+  return strings
 }
-
-
