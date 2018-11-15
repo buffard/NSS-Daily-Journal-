@@ -13,7 +13,7 @@
   <!-- headline -->
   <h1>Daily Journal</h1>
   <!-- Form  -->
-  <form action="">
+  <form id="input" action="">
     <!-- date field -->
     <fieldset>
       <label for="journalDate">Date of entry</label>
@@ -33,7 +33,7 @@
     <fieldset>
       <label for="mood">Mood for the Day</label>
       <!-- options for the selector -->
-      <select>
+      <select id="mood" class="moodSelector">
         <option value="">--Select Mood--</option>
         <option value="happy">Happy! :)</option>
         <option value="sad">Sad :(</option>
@@ -41,7 +41,7 @@
       </select>
     </fieldset>
     <!-- button -->
-    <button name="buttonEntry">Record Journal Entry</button>
+    <button class="buttonEntry" name="buttonEntry">Record Journal Entry</button>
   </form>
 
   
